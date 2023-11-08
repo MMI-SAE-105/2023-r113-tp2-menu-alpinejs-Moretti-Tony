@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr" x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}">
+
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -21,6 +22,7 @@
       }
       </style>
   </head>
+
   <body>
     <!-- https://emmet.io/ -->
     <!-- header>h1{Test de menu} -->
@@ -43,11 +45,25 @@
     </header>
     <!-- h2>lorem2^p>lorem -->
     <h2>Lorem, ipsum.</h2>
+    <dl x-data="{ddIsOpen:false}">
+      <dt>Lorem.</dt>
+      <dd x-show="ddIsOpen">Lorem ipsum dolor sit amet.</dd>
+    </dl>
+    <dl x-data="{ddIsOpen:false}">
+      <dt>Distinctio!</dt>
+      <dd x-show="ddIsOpen">Accusamus eius id doloribus unde?</dd>
+    </dl>
+    <dl x-data="{ddIsOpen:false}">
+      <dt>Non.</dt>
+      <dd x-show="ddIsOpen">Architecto repudiandae necessitatibus quaerat earum!</dd>
+    </dl>
     <p>
       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat
       mollitia adipisci alias error laboriosam numquam incidunt magni eum eos
       nemo aliquid pariatur quam voluptates animi laudantium, aperiam
       consectetur nobis enim.
     </p>
+
   </body>
+
 </html>
