@@ -46,16 +46,16 @@
     <!-- h2>lorem2^p>lorem -->
     <h2>Lorem, ipsum.</h2>
     <dl x-data="{ddIsOpen:false}">
-      <dt>Lorem.</dt>
-      <dd x-show="ddIsOpen">Lorem ipsum dolor sit amet.</dd>
+      <dt @click="ddIsOpen = ! ddIsOpen" class="ddBtn">Lorem.</dt>
+      <dd x-show="ddIsOpen" x-transition.duration.800ms class="ddBtn">Lorem ipsum dolor sit amet.</dd>
     </dl>
     <dl x-data="{ddIsOpen:false}">
-      <dt>Distinctio!</dt>
-      <dd x-show="ddIsOpen">Accusamus eius id doloribus unde?</dd>
+      <dt @click="ddIsOpen = ! ddIsOpen" class="ddBtn">Distinctio!</dt>
+      <dd x-show="ddIsOpen" x-transition.duration.800ms class="ddBtn">Accusamus eius id doloribus unde?</dd>
     </dl>
     <dl x-data="{ddIsOpen:false}">
-      <dt>Non.</dt>
-      <dd x-show="ddIsOpen">Architecto repudiandae necessitatibus quaerat earum!</dd>
+      <dt @click="ddIsOpen = ! ddIsOpen" class="ddBtn">Non.</dt>
+      <dd x-show="ddIsOpen" x-transition.duration.800ms class="ddBtn">Architecto repudiandae necessitatibus quaerat earum!</dd>
     </dl>
     <p>
       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat
